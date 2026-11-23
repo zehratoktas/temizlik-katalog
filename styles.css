@@ -132,7 +132,9 @@ footer { background: var(--green); color: white; padding: 30px 0; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; }
 .footer-brand { color: white; } .footer-brand .brand-mark { background: var(--lime); color: var(--green); }
 .footer-inner p { color: #bdc9c2; font-size: 12px; }
-.footer-inner > a:last-child { color: var(--lime); text-decoration: none; font-size: 12px; font-weight: 800; }
+.contact-details { display: flex; flex-direction: column; align-items: flex-end; gap: 7px; }
+.contact-details address { color: #d9e2dd; font-size: 12px; font-style: normal; }
+.contact-details a { color: var(--lime); text-decoration: none; font-size: 12px; font-weight: 800; }
 .toast { position: fixed; left: 50%; bottom: 25px; transform: translate(-50%, 100px); background: var(--green); color: white; border-radius: 30px; padding: 12px 20px; font-size: 12px; opacity: 0; transition: .3s; z-index: 30; }
 .toast.show { transform: translate(-50%, 0); opacity: 1; }
 
@@ -166,4 +168,5 @@ footer { background: var(--green); color: white; padding: 30px 0; }
   .features div { border-right: 0; border-bottom: 1px solid var(--line); }
   .features div:last-child { border-bottom: 0; }
   .footer-inner { flex-direction: column; gap: 16px; }
+  .contact-details { align-items: center; }
 }
