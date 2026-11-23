@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#12372a" />
+    <title>Temiz Birişim - Temizlik Ürünleri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="#" aria-label="Temiz Birişim ana sayfa">
+          <span class="brand-mark">TB</span>
+          <span>Temiz Birişim</span>
+        </a>
+        <nav class="nav-links" aria-label="Ana menü">
+          <a class="active" href="#urunler">Ürünler</a>
+          <a href="#kategoriler">Kategoriler</a>
+          <a href="#iletisim">İletişim</a>
+        </nav>
+        <button class="cart-button" type="button" aria-label="Sepet">
+          Sepet <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Günlük temizlikte güvenilir çözüm</span>
+            <h1>Temizliğinize<br /><em>canlılık katın.</em></h1>
+            <p>Ev ve işyeriniz için etkili, pratik ve güvenli temizlik ürünleri.</p>
+            <a class="primary-button" href="#urunler">Ürünleri Keşfet <span>→</span></a>
+          </div>
+          <div class="hero-art" aria-label="Temizlik ürünleri görseli">
+            <div class="leaf leaf-one"></div>
+            <div class="leaf leaf-two"></div>
+            <div class="bottle bottle-main">
+              <span>Temiz<br />Birişim</span>
+              <b>Yüzey Temizleyici</b>
+            </div>
+            <div class="bottle bottle-small">
+              <span>TB</span>
+              <b>Sıvı Sabun</b>
+            </div>
+            <div class="spark spark-one">✦</div>
+            <div class="spark spark-two">✦</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog container" id="urunler">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Ürün Kataloğu</span>
+            <h2>Popüler Ürünler</h2>
+          </div>
+          <div class="filters" id="kategoriler" aria-label="Ürün filtreleri">
+            <button class="filter active" type="button" data-category="all">Tümü</button>
+            <button class="filter" type="button" data-category="yuzey">Yüzey</button>
+            <button class="filter" type="button" data-category="banyo">Banyo</button>
+            <button class="filter" type="button" data-category="mutfak">Mutfak</button>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-category="yuzey">
+            <div class="product-image lemon">
+              <span class="tag">Çok Satan</span>
+              <div class="mini-bottle"><span>Limon Ferahlığı</span></div>
+            </div>
+            <div class="product-info">
+              <p class="category">Yüzey Temizleme</p>
+              <h3>Limonlu Yüzey Temizleyici</h3>
+              <div class="buy-row"><strong>₺89,90</strong><button class="add-button" type="button" data-name="Limonlu Yüzey Temizleyici">Sepete Ekle</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="banyo">
+            <div class="product-image mint">
+              <div class="mini-bottle pink"><span>Hijyenik Banyo</span></div>
+            </div>
+            <div class="product-info">
+              <p class="category">Banyo Bakımı</p>
+              <h3>Banyo ve Kireç Temizleyici</h3>
+              <div class="buy-row"><strong>₺109,90</strong><button class="add-button" type="button" data-name="Banyo ve Kireç Temizleyici">Sepete Ekle</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mutfak">
+            <div class="product-image cream">
+              <span class="tag">Yeni</span>
+              <div class="mini-bottle blue"><span>Mutfak Yağ Çözücü</span></div>
+            </div>
+            <div class="product-info">
+              <p class="category">Mutfak Bakımı</p>
+              <h3>Yoğun Yağ Çözücü</h3>
+              <div class="buy-row"><strong>₺99,90</strong><button class="add-button" type="button" data-name="Yoğun Yağ Çözücü">Sepete Ekle</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="yuzey">
+            <div class="product-image lavender">
+              <div class="mini-bottle purple"><span>Lavanta Ferahlığı</span></div>
+            </div>
+            <div class="product-info">
+              <p class="category">Yüzey Temizleme</p>
+              <h3>Lavantalı Çok Amaçlı Temizleyici</h3>
+              <div class="buy-row"><strong>₺79,90</strong><button class="add-button" type="button" data-name="Lavantalı Çok Amaçlı Temizleyici">Sepete Ekle</button></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="features container">
+        <div><strong>Hızlı Teslimat</strong><span>24-48 saat içinde</span></div>
+        <div><strong>Güvenli Formül</strong><span>Aileye uygun</span></div>
+        <div><strong>Kolay İade</strong><span>14 gün koşulsuz</span></div>
+      </section>
+    </main>
+
+    <footer id="iletisim">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="#"><span class="brand-mark">TB</span><span>Temiz Birişim</span></a>
+        <p>Her gün daha temiz, daha ferah.</p>
+        <a href="tel:+902125550100">0212 555 01 00</a>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
